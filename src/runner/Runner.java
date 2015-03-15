@@ -92,6 +92,7 @@ public class Runner {
         }
 		if (i <= 0) {
 			System.err.println("Number must be greater than zero");
+			System.out.println("Exit(1)");
 			System.exit(1);
 		}
 		return i;
