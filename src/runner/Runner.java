@@ -44,11 +44,11 @@ public class Runner {
 	}
 	
 	/**
-	 * this method rotates specified matrix on 90 degrees underclockwise
+	 * this method rotates specified matrix on 90 degrees counterclockwise
 	 * @param mtrx
 	 * @return rotated
 	 */
-	private static int[][] rotateMatrixUnderclockwise(int[][] mtrx) {
+	private static int[][] rotateMatrixCounterclockwise(int[][] mtrx) {
 		int a = mtrx.length;
 	    int b = mtrx[0].length;
 	    int[][] rotated = new int[b][a];
@@ -125,8 +125,8 @@ public class Runner {
 
 		System.out.println();
 		
-		rotated = rotateMatrixUnderclockwise(initial);
-		System.out.println("The matrix rotated underclockwise");
+		rotated = rotateMatrixCounterclockwise(initial);
+		System.out.println("The matrix rotated counterclockwise");
 		printMatrix(rotated);
 	}
 }
